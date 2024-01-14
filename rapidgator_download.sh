@@ -9,7 +9,9 @@ if [ -z "$url" ]; then
     exit 1
 fi
 
-source .env
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+source $DIR/.env
 
 response=$(curl -s "https://rapidgator.net/api/v2/user/login?login=$email&password=$password")
 #echo $response
