@@ -12,3 +12,9 @@ Then you can download a file by running:
 ```
 ./get.sh https://rapidgator.net/file/filename.html
 ```
+
+This bash script depends on:
+
+* curl
+* jq
+
